@@ -66,8 +66,8 @@ class UserList extends Component {
             <FormControl style={{ width: 220 }}>
               <InputLabel htmlFor="sortBy">SortBy</InputLabel>
               <Select value={this.state.sort} onChange={this.handleChange}>
-                <MenuItem value="username asc">User name A...Z</MenuItem>
-                <MenuItem value="username desc">User name Z...A</MenuItem>
+                <MenuItem value="username asc">Username A...Z</MenuItem>
+                <MenuItem value="username desc">Username Z...A</MenuItem>
                 <MenuItem value="id desc">Id higher first</MenuItem>
                 <MenuItem value="id asc">Id lover first</MenuItem>
               </Select>
