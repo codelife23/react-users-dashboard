@@ -108,8 +108,16 @@ class UserList extends Component {
                     </div>
                   </TableCell>
                 </TableRow>
-              ) : (
+              ) : Object.keys(users).length ? (
                 users.map(user => <UserItem key={user.id} user={user} />)
+              ) : (
+                <TableRow>
+                  <TableCell colSpan={7}>
+                    <div style={{ textAlign: "center", fontSize: 16 }}>
+                      No users
+                    </div>
+                  </TableCell>
+                </TableRow>
               )}
             </TableBody>
           </Table>
